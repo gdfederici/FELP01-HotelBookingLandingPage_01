@@ -1,2 +1,192 @@
 @import 'reset-meyer.css';
 @import 'theme_a.css' screen;
+
+/*** FONTS ***/ 
+/* mulish-regular - latin-ext_latin */
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/mulish-v1-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v1-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* mulish-600 - latin-ext_latin */
+@font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/mulish-v1-latin-ext_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v1-latin-ext_latin-600.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* mulish-700 - latin-ext_latin */
+  @font-face {
+    font-family: 'Mulish';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/mulish-v1-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/mulish-v1-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+  /* luckiest-guy-regular - latin */
+@font-face {
+    font-family: 'Luckiest Guy';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/luckiest-guy-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/luckiest-guy-v11-latin-regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+ 
+/*** BASECAMP ***/
+body {
+    max-width: 1440px;
+    margin: 0 auto;
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    font-weight: 400;
+}
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+}
+h2 {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+h4 {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+h5 {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+h6 { /* Footer Title*/
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+strong {
+    font-weight: 700;
+}
+
+
+/*** HEADER ***/
+.header-upper {
+    padding: 0 165px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    line-height: 60px;
+    font-size: 10px;
+}
+.header-upper p:first-child {
+    margin-right: 549px;
+}
+.header-upper__gift-card {
+    padding-left: 38px;
+    display: block;
+}
+.header-upper__loyalty-program {
+    padding-left: 38px;
+    display: block;
+    margin-left: 98px;
+}
+
+.header-main {
+    padding: 40px 165px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.header-main__logo {
+    font-size: 24px;
+    margin-right: 108px;
+}
+.search-form {
+    width: 350px;
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+.search-form input[type=text] {
+    border-radius: 6px 0 0 6px;
+    border: none;
+    width: 285px;
+    padding: 12px 23px;
+}
+.search-form input[type=submit] {
+    border-radius: 0 6px 6px 0;
+    border: none;
+    width: 65px;
+    padding: 12px 23px;
+}
+.header-main__cart {
+    width: 34px;
+    height: 34px;
+    position: relative;
+    margin-left: 238px;
+}
+.header-main__cart_items {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    max-width: 20px;
+    max-height: 20px;
+    font-size: 10px;
+    font-weight: 600;
+    border-radius: 100%;
+    padding: 5px 7px;
+}
+.header-main__user {
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    margin-left: 53px;
+}
+.header-main__user picture, .header-main__user img {
+    border-radius: 50%;
+}
+.header-main__user a {
+    display: block;
+    width: 92px;
+    margin-left: 18px;
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.nav-main {
+    padding: 0 165px;
+}
+.nav-main ul {
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+}
+.nav-main__link {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 75px;
+}
+.nav-main__link:hover {
+    text-decoration: none;
+}

@@ -1,29 +1,82 @@
 
-/*** FONTS ***/ 
-/* mulish-regular - latin-ext_latin */
-@font-face {
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/mulish-v1-latin-ext_latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/mulish-v1-latin-ext_latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* mulish-700 - latin-ext_latin */
-  @font-face {
-    font-family: 'Mulish';
-    font-style: normal;
-    font-weight: 700;
-    src: local(''),
-         url('../fonts/mulish-v1-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/mulish-v1-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
-  /* luckiest-guy-regular - latin */
-@font-face {
-    font-family: 'Luckiest Guy';
-    font-style: normal;
-    font-weight: 400;
-    src: local(''),
-         url('../fonts/luckiest-guy-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/luckiest-guy-v11-latin-regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-  }
+/*** COLOR TEMP ***/
+/*
+white #ffffff > 
+black #333333 > 
+red #ec1f46 > 
+blu #0a223d > 
+background #f5fafe
+*/
+
+/*** BASECAMP ***/
+body {
+     background-color: #E5E5E5;
+}
+header, main, footer {
+     background-color: #f5fafe;
+}
+h5 {
+     color: #ec1f46;
+}
+a {
+     text-decoration: none;
+     color: #333333;
+}
+a:hover {
+     text-decoration: underline;
+     color: #ec1f46;
+}
+
+
+/*** HEADER ***/
+.header-upper__gift-card {
+     background: url("../img/ico_gift_black.svg") no-repeat left;
+     background-size: 18px 18px;
+}
+.header-upper__loyalty-program {
+     background: url("../img/ico_star_black.svg") no-repeat left;
+     background-size: 18px 18px;
+}
+
+.header-main {
+     background-color: #fff;
+}
+.header-main__logo {
+     color: #333333;
+ }
+ .header-main__logo span {
+     color: #ec1f46;
+ }
+ .search-form input[type=text] {
+     background-color: #f5fafe;
+ }
+ .search-form input[type=submit] {
+     background: url("../img/ico_search_white.svg") no-repeat center;
+     background-color: #ec1f46;
+ }
+ .header-main__cart {
+     background: url("../img/ico_shopping-cart_black.svg") no-repeat bottom left;
+ }
+ .header-main__cart_items {
+     color: #ffffff;
+     background-color: #ec1f46;
+ }
+ .header-main__cart_items:hover {
+     color: #ffffff;
+ }
+ .header-main__user a {
+     background: url("../img/ico_chevron-down_black.svg") no-repeat center right;
+ }
+
+.nav-main {
+     background-color: #0a223d;
+}
+.nav-main__link {
+     color: #ffffff;
+ }
+ .nav-main__link:hover {
+     color: #ec1f46;
+ }
+ .nav-main__link_active {
+     color: #ec1f46;
+ }
