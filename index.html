@@ -11,13 +11,13 @@
 
 <body>
     <header>
-        <div class="header-upper">
+        <div class="header-upper page-layout">
             <p><strong>Questions? Need Help?</strong> Call us on <a href="tel:+011234561500">(+123) 456 1500</a></p>
             <a class="header-upper__gift-card" href="#">BTP Gift Card</a>
             <a class="header-upper__loyalty-program" href="#">Loyalty Program</a>
         </div>
 
-        <div class="header-main">
+        <div class="header-main page-layout">
             <h1 class="header-main__logo">Best <span>Tour</span> Plan</h1>
             <form class="search-form" action="#" method="get">
                 <input type="text" name="search" placeholder="Search Location" required="required" />
@@ -37,7 +37,7 @@
             </div>
         </div>
 
-        <nav class="nav-main">
+        <nav class="nav-main page-layout">
             <ul>
                 <li><a class="nav-main__link" href="#"">All deals</a></li>
                 <li><a class="nav-main__link" href="#"">Hotels</a></li>
@@ -50,6 +50,100 @@
         </nav>
     </header>
     
+
+    <main>
+        <nav class="nav-breadcrump page-layout">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Flash Offers</a></li>
+                <li><a href="#">Grand Hilton Hotel</a></li>
+            </ul>
+        </nav>
+
+        <section class="main-offer page-layout"> <!-- Contenitore per l'offerta principale -->
+            <div class="main-offer__hotel-selected hotel-selected"> <!-- Blocco contenente nome e voto della soluzione scelta -->
+                <div class="hotel-selected__hotel-title"> <!-- Per posizionamento -->
+                    <div class="hotel-selected__stars-rate">
+                        <img src="img/ico_star-rating.svg" alt="Single star rate">
+                        <img src="img/ico_star-rating.svg" alt="Single star rate">
+                        <img src="img/ico_star-rating.svg" alt="Single star rate">
+                        <img src="img/ico_star-rating.svg" alt="Single star rate">
+                        <img src="img/ico_star-rating.svg" alt="Single star rate">
+                    </div> 
+                    <div class="hotel-selected__hotel-name">
+                        <h3>Gran Hilton Hotel</h3>
+                        <p>Flash Offer</p>
+                    </div>
+                    <p>Half-Board/ All inclusive + complimentary activities + child stays free</p>
+                </div>
+                <div class="hotel-rating"> 
+                    <p>User Ratings</p>
+                    <p><span class="hotel-rating__hotel-vote">4.5/</span>5</p>
+                </div>
+            </div>
+
+            <div class="main-offer__offer-highlights offer-highlights"> <!-- Blocco contenente slider, riassunto e mappa -->
+                <div class="hotel-photoslider">
+                    <picture>
+                        <source srcset="img/grand-hilton-hotel.webp" type="image/webp">
+                        <source srcset="img/grand-hilton-hotel.jpg" type="image/jpeg"> 
+                        <img src="img/grand-hilton-hotel.jpg" alt="Gran Hilton Hotel swimming pool">
+                    </picture>
+                    <div class="hotel-photoslider__nav">
+                        <a href="#" class="prev-slider"></a>
+                        <a href="#" class="next-slider"></a>
+                    </div>    
+                </div>
+                <div class="offer-highlights__column"> <!-- Per posizionamento -->
+                    <div class="offer-selected">
+                        <div class="offer-selected__resume"> <!-- Per posizionamento -->
+                            <div class="offer-selected__resume1"> <!-- Per posizionamento -->
+                                <p class="resume__mini">price stars as</p>
+                                <p class="resume__price">$ 8,500</p>
+                                <p>per room / night</p>
+                                <p class="resume__booking">Quick Booking</p>
+                            </div>
+                            <div class="offer-selected__resume2"> <!-- Per posizionamento -->
+                                <p class="resume__guest">2 x Guests</p>
+                                <p class="resume__room">1 x Room</p>
+                                <p class="resume__booking">12100</p>
+                            </div>
+                        </div>
+                        <button class="offer-selected__button">View Other Options</button>
+                    </div>
+                    <div class="offer-map">
+                        <picture>
+                            <source srcset="img/map.webp" type="image/webp">
+                            <source srcset="img/map.jpg" type="image/jpeg"> 
+                            <img src="img/map.jpg" alt="Gran Hilton Hotel position on Google maps">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+
+
+        </section>
+
+        <div class="other-packages">
+
+        </div>
+
+        <section class="testimonials">
+
+        </section>
+
+        <div class="newsletter">
+
+        </div>
+
+        <div class="other-acrivities">
+
+        </div>
+
+
+    </main>
+
+
 
 </body>
 

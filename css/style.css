@@ -1,6 +1,7 @@
 @import 'reset-meyer.css';
 @import 'theme_a.css' screen;
 
+
 /*** FONTS ***/ 
 /* mulish-regular - latin-ext_latin */
 @font-face {
@@ -20,8 +21,8 @@
          url('../fonts/mulish-v1-latin-ext_latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/mulish-v1-latin-ext_latin-600.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-  /* mulish-700 - latin-ext_latin */
-  @font-face {
+/* mulish-700 - latin-ext_latin */
+@font-face {
     font-family: 'Mulish';
     font-style: normal;
     font-weight: 700;
@@ -29,7 +30,7 @@
          url('../fonts/mulish-v1-latin-ext_latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/mulish-v1-latin-ext_latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
-  /* luckiest-guy-regular - latin */
+/* luckiest-guy-regular - latin */
 @font-face {
     font-family: 'Luckiest Guy';
     font-style: normal;
@@ -38,14 +39,43 @@
          url('../fonts/luckiest-guy-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
          url('../fonts/luckiest-guy-v11-latin-regular.woff') format('woff'), /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+/* nunito-regular - latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/nunito-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/nunito-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-600 - latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 600;
+    src: local(''),
+         url('../fonts/nunito-v16-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/nunito-v16-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* nunito-800 - latin-ext_latin */
+@font-face {
+    font-family: 'Nunito';
+    font-style: normal;
+    font-weight: 800;
+    src: local(''),
+         url('../fonts/nunito-v16-latin-ext_latin-800.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/nunito-v16-latin-ext_latin-800.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
  
+
 /*** BASECAMP ***/
 body {
     max-width: 1440px;
     margin: 0 auto;
     font-family: 'Mulish', Arial, Helvetica, sans-serif;
     font-size: 12px;
+    line-height: 16px;
     font-weight: 400;
 }
 h1{
@@ -63,6 +93,7 @@ h3 {
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
+    line-height: 30px;
 }
 h4 {
     font-family: 'Mulish', Arial, Helvetica, sans-serif;
@@ -87,9 +118,17 @@ strong {
 }
 
 
+
+/*** BOXED STYLE ***/
+.page-layout {
+    padding-left: 165px;
+    padding-right: 165px;    
+}
+
+
+
 /*** HEADER ***/
 .header-upper {
-    padding: 0 165px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -109,8 +148,10 @@ strong {
     margin-left: 98px;
 }
 
+
 .header-main {
-    padding: 40px 165px;
+    padding-top: 40px;
+    padding-bottom: 40px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -173,9 +214,7 @@ strong {
     line-height: 40px;
 }
 
-.nav-main {
-    padding: 0 165px;
-}
+
 .nav-main ul {
     display: flex;
     justify-content: space-between;
@@ -189,4 +228,149 @@ strong {
 }
 .nav-main__link:hover {
     text-decoration: none;
+}
+
+
+
+/*** MAIN CONTENT - MAIN OFFER ***/
+.nav-breadcrump ul {
+    display: flex;
+    justify-content: flex-start;
+    line-height: 50px;
+    font-size: 10px;
+}
+.nav-breadcrump a {
+    text-transform: capitalize;
+}
+
+
+
+.main-offer__hotel-selected { /* Blocco contentente nome e voto della soluzione scelta */
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    text-transform: capitalize;
+    height: 100px;
+}
+.hotel-selected__hotel-title {
+    align-self: center;
+}
+.hotel-selected__hotel-name {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+}
+.hotel-selected__hotel-name h3 {
+    margin-right: 14px;
+}
+.hotel-selected__hotel-name p {
+    font-weight: 600;
+    font-size: 10px;
+    line-height: 20px;
+    border-radius: 3px;
+    padding: 0 9px;
+    max-height: 20px;
+    align-self: center;
+}
+.hotel-rating { /* Blocco con voto degli utenti */
+    border-radius: 4px;
+    font-size: 10px;
+    font-weight: 600;
+    text-align: center;
+    padding: 0 7px;
+    height: 45px;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.hotel-rating p:first-child {
+    font-size: 8px;
+}
+.hotel-rating__hotel-vote {
+    font-size: 14px;
+}
+
+
+.main-offer__offer-highlights {
+    display: flex;
+    justify-content: space-between;
+}
+.hotel-photoslider {
+    position: relative;
+}
+.hotel-photoslider picture, .hotel-photoslider img {
+    border-radius: 8px;
+}
+.hotel-photoslider__nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 213px;
+    left: 17px;
+    width: 694px;
+    z-index: 10;
+}
+.hotel-photoslider__nav .prev-slider {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.hotel-photoslider__nav .next-slider {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+.offer-highlights__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.offer-selected {
+    border-radius: 8px;
+    padding: 29px 29px 26px 26px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.5rem;
+}
+.offer-selected__resume {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 17px;
+}
+.offer-selected__resume .resume__mini {
+    font-size: 10px;
+}
+.offer-selected__resume .resume__price {
+    font-size: 24px;
+    font-weight: 800;
+}
+.offer-selected__resume .resume__booking {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 2rem;
+}
+.offer-selected__resume .resume__guest {
+    padding-left: 20px;
+    text-align: right;
+}
+.offer-selected__resume .resume__room {
+    padding-left: 20px;
+    text-align: right;
+}
+.offer-selected__resume2 .resume__booking {
+    padding-left: 20px;
+    margin-top: 1.5rem;
+    text-align: right;
+}
+.offer-selected__button {
+    line-height: 43px;
+    padding: 0 82px;
+    font-weight: 600;
+}
+
+.offer-map {
+    border-radius: 10px;
 }

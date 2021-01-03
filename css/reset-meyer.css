@@ -51,3 +51,16 @@ table {
 input:focus {
     outline: none;
 }
+button {
+    display: inline-block;
+    border: none;
+    margin: 0;
+    text-decoration: none;
+    cursor: pointer;
+    text-align: center;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+button:focus {
+    outline: none;
+}

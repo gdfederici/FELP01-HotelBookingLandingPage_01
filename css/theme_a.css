@@ -26,6 +26,19 @@ a:hover {
      text-decoration: underline;
      color: #ec1f46;
 }
+button {
+    background: #ec1f46;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 4px;
+    border: 1px solid #ec1f46;
+}
+button:hover, button:focus {
+    background: #ffffff;
+    color: #ec1f46;
+}
+
 
 
 /*** HEADER ***/
@@ -80,3 +93,43 @@ a:hover {
  .nav-main__link_active {
      color: #ec1f46;
  }
+
+
+
+ /*** MAIN CONTENT - MAIN OFFER ***/
+ .nav-breadcrump ul li:not(:last-child):after {
+    content: " / ";
+    white-space: pre;
+}
+
+
+.hotel-selected__hotel-name p {
+    background: #ec1f46;
+    color: #ffffff;
+}
+.hotel-rating {
+    background: #ec1f46;
+    color: #ffffff;
+}
+
+
+.hotel-photoslider__nav .prev-slider {
+    background: url("../img/ico_chevron-left_white.svg") no-repeat center;
+}
+.hotel-photoslider__nav .next-slider {
+    background: url("../img/ico_chevron-right_white.svg") no-repeat center;
+}
+
+.offer-selected {
+    background: #0a223d;
+    color: #ffffff;
+}
+.offer-selected__resume .resume__guest {
+    background: url("../img/ico_user_white.svg") no-repeat left;
+}
+.offer-selected__resume .resume__room {
+    background: url("../img/ico_home_white.svg") no-repeat left;
+}
+.offer-selected__resume2 .resume__booking {
+    background: url("../img/ico_phone-call_white.svg") no-repeat left;
+}
