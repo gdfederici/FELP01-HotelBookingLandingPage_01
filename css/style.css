@@ -398,3 +398,70 @@ strong {
     border-bottom-width: 4px;
     border-bottom-style: solid;
 }
+
+
+.main-offer__package h3 {
+    margin: 40px 0 29px 0;
+}
+.package h4 {
+    background: #0A223D;
+    color: #ffffff;
+    line-height: 50px;
+    padding: 0 24px;
+    border-radius: 8px 8px 0 0;
+}
+.package-row {
+    display: flex;
+    justify-content: space-between;
+}
+.package__style-half {
+    background: #ffffff;
+    border-radius: 8px;
+    width: 538px;
+    margin-bottom: 33px;
+}
+.package__style-full {
+    background: #ffffff;
+    border-radius: 8px;
+    width: 1110px;
+}
+.package__content {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 24px;
+}
+.package__column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+.package__column_2 {
+    width: 230px;
+}
+.package__column_3 {
+    width: 370px;
+    margin: 32px 0; 
+}
+.package__column_3 h5 {
+    margin-bottom: 10px;
+}
+.package__list li {
+    background: url("../img/ico_check-circle_full.svg") no-repeat left; /* Perchè con list-style-image non c'è allineamento verticale col testo */
+    line-height: 18px;
+    padding:  11px 22px 11px 40px;
+}
+.package__mini {
+    font-size: 10px;
+    padding: 2rem 22px 11px 40px;
+}
+.package__date {
+    font-size: 14px;
+    text-align: right;
+    height: 18px;
+    background: url("../img/ico_calendar_black.svg") no-repeat left;
+    padding: 11px 0 11px 40px;
+}
+.package__line {
+    margin: 0 37px 0 25px;
+    border: 1px dashed #e0e0e0;
+}

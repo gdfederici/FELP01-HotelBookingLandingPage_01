@@ -12,8 +12,11 @@ background #f5fafe
 body {
      background-color: #E5E5E5;
 }
-header, main, footer {
+header, main {
      background-color: #f5fafe;
+}
+footer {
+    background: #0a223d;
 }
 h5 {
      color: #ec1f46;
@@ -97,7 +100,7 @@ button:hover, button:focus {
 
 
  /*** MAIN CONTENT - MAIN OFFER ***/
- .nav-breadcrump ul li:not(:last-child):after {
+.nav-breadcrump ul li:not(:last-child):after {
     content: " / ";
     white-space: pre;
 }
