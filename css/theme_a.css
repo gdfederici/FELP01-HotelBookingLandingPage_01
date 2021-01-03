@@ -133,3 +133,9 @@ button:hover, button:focus {
 .offer-selected__resume2 .resume__booking {
     background: url("../img/ico_phone-call_white.svg") no-repeat left;
 }
+
+
+.cards-menu__link_active {
+    color: #ec1f46;
+    border-bottom-color: #ec1f46;
+}
