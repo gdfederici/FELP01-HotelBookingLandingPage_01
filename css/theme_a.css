@@ -106,6 +106,7 @@ button:hover, button:focus {
 }
 
 
+/* Blocco contentente nome e voto della soluzione scelta */
 .hotel-selected__hotel-name p {
     background: #ec1f46;
     color: #ffffff;
@@ -116,6 +117,7 @@ button:hover, button:focus {
 }
 
 
+/* Blocco contenente slider, riassunto e mappa */
 .hotel-photoslider__nav .prev-slider {
     background: url("../img/ico_chevron-left_white.svg") no-repeat center;
 }
@@ -138,7 +140,77 @@ button:hover, button:focus {
 }
 
 
+/* Navigazione secondaria interna all'offerta */
 .cards-menu__link_active {
     color: #ec1f46;
     border-bottom-color: #ec1f46;
 }
+
+
+/* Blocco contenente i tre riquadri con i dettagli dell'offerta selezionata */
+.package h4 {
+    background: #0A223D;
+    color: #ffffff;
+}
+.package__style-half {
+    background: #ffffff;
+}
+.package__style-full {
+    background: #ffffff;
+}
+.package__list li {
+    background: url("../img/ico_check-circle_full.svg") no-repeat left; /* Perchè con list-style-image non c'è allineamento verticale col testo */
+    line-height: 18px;
+}
+.package__date {
+    background: url("../img/ico_calendar_black.svg") no-repeat left;
+}
+.package__line {
+    border: 1px dashed #e0e0e0;
+}
+
+
+
+/*** MAIN CONTENT - OTHER PACKAGES ***/
+
+/* Card hotel a due colonne */
+.hotelcard-double__photo p {
+    background: #ec1f46;
+    color: #ffffff;
+}
+.hotelcard-double__info {
+    background: #0a223d;
+    color: #ffffff;
+}
+.hotelcard-double__place {
+    background: url("../img/ico_map-pin_white.svg") no-repeat left;
+}
+.hotelcard-double__guest {
+    background: url("../img/ico_user_white.svg") no-repeat left;
+}
+.hotelcard-double__room {
+    background: url("../img/ico_home_white.svg") no-repeat left;
+}
+
+/* Card hotel a colonna singola */
+.hotelcard-single__photo p {
+    background: #ec1f46;
+    color: #ffffff;
+}
+.hotelcard-single__info {
+    background: #0a223d;
+    color: #ffffff;
+}
+.hotelcard-single__place {
+    background: url("../img/ico_map-pin_white.svg") no-repeat left;
+}
+.hotelcard-single__guest {
+    background: url("../img/ico_user_white.svg") no-repeat left;
+}
+.hotelcard-single__room {
+    background: url("../img/ico_home_white.svg") no-repeat left;
+}
+
+
+
+/*** MAIN CONTENT - TESTIMONIALS ***/

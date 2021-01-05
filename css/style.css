@@ -84,20 +84,20 @@ h1{
 }
 h2 {
     font-family: 'Mulish', Arial, Helvetica, sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-h3 {
-    font-family: 'Mulish', Arial, Helvetica, sans-serif;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
     line-height: 30px;
 }
+h3 {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
 h4 {
     font-family: 'Mulish', Arial, Helvetica, sans-serif;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 700;
     text-transform: capitalize;
 }
@@ -244,7 +244,6 @@ strong {
 }
 
 
-
 .main-offer__hotel-selected { /* Blocco contentente nome e voto della soluzione scelta */
     display: flex;
     justify-content: space-between;
@@ -260,7 +259,7 @@ strong {
     justify-content: flex-start;
     align-content: center;
 }
-.hotel-selected__hotel-name h3 {
+.hotel-selected__hotel-name h2 {
     margin-right: 14px;
 }
 .hotel-selected__hotel-name p {
@@ -292,6 +291,7 @@ strong {
 }
 
 
+/* Blocco contenente slider, riassunto e mappa */
 .main-offer__offer-highlights {
     display: flex;
     justify-content: space-between;
@@ -376,6 +376,7 @@ strong {
 }
 
 
+/* Navigazione secondaria interna all'offerta */
 .main-offer__cards-menu {
     margin-top: 67px;
     padding-bottom: 15px;
@@ -400,28 +401,30 @@ strong {
 }
 
 
-.main-offer__package h3 {
+/* Blocco contenente i tre riquadri con i dettagli dell'offerta selezionata */
+.package {
+    margin-bottom: 65px;
+}
+
+.main-offer__package h2 {
     margin: 40px 0 29px 0;
 }
 .package h4 {
-    background: #0A223D;
-    color: #ffffff;
     line-height: 50px;
     padding: 0 24px;
     border-radius: 8px 8px 0 0;
+    font-size: 14px;
 }
 .package-row {
     display: flex;
     justify-content: space-between;
 }
 .package__style-half {
-    background: #ffffff;
     border-radius: 8px;
     width: 538px;
     margin-bottom: 33px;
 }
 .package__style-full {
-    background: #ffffff;
     border-radius: 8px;
     width: 1110px;
 }
@@ -446,8 +449,6 @@ strong {
     margin-bottom: 10px;
 }
 .package__list li {
-    background: url("../img/ico_check-circle_full.svg") no-repeat left; /* Perchè con list-style-image non c'è allineamento verticale col testo */
-    line-height: 18px;
     padding:  11px 22px 11px 40px;
 }
 .package__mini {
@@ -458,10 +459,169 @@ strong {
     font-size: 14px;
     text-align: right;
     height: 18px;
-    background: url("../img/ico_calendar_black.svg") no-repeat left;
     padding: 11px 0 11px 40px;
 }
 .package__line {
     margin: 0 37px 0 25px;
-    border: 1px dashed #e0e0e0;
 }
+
+
+
+/*** MAIN CONTENT - OTHER PACKAGES ***/
+.other-packages h3 {
+    margin: 40px 0 65px 0;
+    text-align: center;
+}
+.other-packages__row {
+    display: flex;
+    justify-content: space-between;
+}
+.other-packages__hotelcard {
+    margin-bottom: 30px;
+}
+.other-packages__hotelcard-last {
+    margin-bottom: 70px;
+}
+
+/* Card hotel a due colonne */
+.hotelcard-double {
+    display: flex;
+    justify-content: flex-start;
+    height: 500px;
+    width: 730px;
+}
+.hotelcard-double__photo {
+    position: relative;
+    border-radius: 8px 0 0 8px;
+}
+.hotelcard-double__photo p {
+    position: absolute;
+    left: 0;
+    top: 26px;
+    font-weight: 600;
+    padding: 8px 12px;
+    border-radius: 0 4px 4px 0;
+}
+.hotelcard-double__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 8px 8px 0;
+    padding: 46px 21px 30px 44px;
+}
+.hotelcard-double__info h4 {
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+.hotelcard-double__info>p {
+    line-height: 24px;
+}
+.hotelcard-double__bulletpoint {
+    line-height: 24px;
+    margin: 35px 0;
+    font-size: 12px;
+}
+.hotelcard-double__place {
+    padding-left: 28px;
+}
+.hotelcard-double__guest {
+    padding-left: 28px;
+}
+.hotelcard-double__room {
+    padding-left: 28px;
+}
+.hotelcard-double__book {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.hotelcard-double__fullprice {
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.hotelcard-double__price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 5px 0 0 0;
+}
+.hotecard-double__button {
+    padding: 10px 26px;
+}
+
+/* Card hotel a colonna singola */
+.hotelcard-single {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 500px;
+    width: 350px;
+}
+.hotelcard-single__photo {
+    position: relative;
+    border-radius: 8px 8px 0 0;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+}
+.hotelcard-single__photo p {
+    position: absolute;
+    left: 0;
+    top: 26px;
+    font-size: 8px;
+    font-weight: 600;
+    line-height: 10px;
+    padding: 4px 9px;
+    border-radius: 0 4px 4px 0;
+}
+.hotelcard-single__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 0 0 8px 8px;
+    padding: 30px 21px 25px 32px;
+    height: 250px;
+}
+.hotelcard-single__info h4 {
+    line-height: 23px;
+}
+.hotelcard-single__bulletpoint {
+    line-height: 24px;
+    margin: 23px 0;
+    font-size: 12px;
+}
+.hotelcard-single__place {
+    padding-left: 28px;
+}
+.hotelcard-single__guest {
+    padding-left: 28px;
+}
+.hotelcard-single__room {
+    padding-left: 28px;
+}
+.hotelcard-single__book {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+.hotelcard-single__fullprice {
+    text-decoration: line-through;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+}
+.hotelcard-single__price {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 30px;
+    margin: 5px 0 0 0;
+}
+.hotelcard-single__button {
+    padding: 10px 26px;
+}
+
+
+
+/*** MAIN CONTENT - TESTIMONIALS ***/
