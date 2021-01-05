@@ -226,3 +226,24 @@ button:hover, button:focus {
 .testimonials-slider__nav .next-testimonials {
     background: url("../img/ico_chevron-right_black.svg") no-repeat center;
 }
+
+
+
+/*** MAIN CONTENT - NEWSLETTER ***/
+.newsletter {
+    background: linear-gradient(180deg, rgba(10, 34, 61, 0.8) 20%, rgba(10, 34, 61, 0.8) 80%), url(../img/background-newsletter.jpg);
+/*    background: url("../img/background-newsletter.jpg") rgba(10, 34, 61, 0.80);
+    background-blend-mode: darken;*/
+}
+.newsletter__title {
+    color: #ffffff;
+}
+.newsletter__form input[type=mail] {
+    background-color: #f5fafe;
+}
+.newsletter__form input[type=mail]::placeholder {
+    color: #bdbdbd;
+}
+.newsletter__form input[type=submit] {
+    color: #ffffff;
+    background-color: #ec1f46;

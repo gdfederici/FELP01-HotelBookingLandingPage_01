@@ -626,7 +626,6 @@ strong {
 
 
 /*** MAIN CONTENT - TESTIMONIALS ***/
-
 .testimonials h3 {
     margin: 40px 0 115px 0;
     text-align: center;
@@ -690,3 +689,54 @@ strong {
     width: 30px;
     height: 30px;
 }
+
+
+
+/*** MAIN CONTENT - NEWSLETTER ***/
+.newsletter {
+    height: 260px;
+    margin-top: 70px;
+}
+.newsletter__layout {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 731px;
+    margin: 0 auto;
+    padding: 98px 0 87px 0;
+}
+.newsletter__title p {
+    font-size: 24px;
+    font-weight: 300;
+    line-height: 30px;
+}
+.newsletter__title h3 {
+    font-weight: 600;
+    line-height: 45px;
+}
+.newsletter__form {
+    width: 350px;
+    display: flex;
+    justify-items: flex-start;
+    align-items: flex-start;
+}
+.newsletter__form input[type=mail] {
+    border-radius: 4px 0 0 4px;
+    border: none;
+    width: 285px;
+    padding: 19px 18px 18px 33px;
+    line-height: 18px;
+}
+.newsletter__form input[type=submit] {
+    border-radius: 0 4px 4px 0;
+    border: none;
+    width: 65px;
+    padding: 20px 18px;
+    font-size: 12px;
+    line-height: 15px;
+}
+
+
+
+/*** MAIN CONTENT - OTHER ACTIVITIES ***/
+
