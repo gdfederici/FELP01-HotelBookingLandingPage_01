@@ -214,3 +214,15 @@ button:hover, button:focus {
 
 
 /*** MAIN CONTENT - TESTIMONIALS ***/
+.testimonials-slider {
+    background: url("../img/vector-down.svg") no-repeat 64px 13px, url("../img/vector-up.svg") no-repeat 601px 119px #ffffff;
+}
+.testimonials-slider__name {
+    color: #ec1f46;
+}
+.testimonials-slider__nav .prev-testimonials {
+    background: url("../img/ico_chevron-left_black.svg") no-repeat center;
+}
+.testimonials-slider__nav .next-testimonials {
+    background: url("../img/ico_chevron-right_black.svg") no-repeat center;
+}

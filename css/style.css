@@ -202,6 +202,7 @@ strong {
     justify-items: flex-start;
     align-items: center;
     margin-left: 53px;
+    line-height: 0;
 }
 .header-main__user picture, .header-main__user img {
     border-radius: 50%;
@@ -403,7 +404,7 @@ strong {
 
 /* Blocco contenente i tre riquadri con i dettagli dell'offerta selezionata */
 .package {
-    margin-bottom: 65px;
+    padding-bottom: 65px;
 }
 
 .main-offer__package h2 {
@@ -625,3 +626,67 @@ strong {
 
 
 /*** MAIN CONTENT - TESTIMONIALS ***/
+
+.testimonials h3 {
+    margin: 40px 0 115px 0;
+    text-align: center;
+}
+
+.testimonials-slider {
+    max-width: 731px;
+    height: 280px;
+    border-radius: 8px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.testimonials-slider__single {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 607px;
+    position: absolute;
+    top: -45px;
+}
+.testimonials-slider__user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials-slider__user picture, .testimonials-slider__user img {
+    border-radius: 50%;
+}
+.testimonials-slider__name {
+    font-weight: 700;
+    line-height: 15px;
+    margin: 9px 0 10px 0;
+}
+.testimonials-slider__date {
+    font-size: 10px;
+}
+.testimonials-slider_review {
+    line-height: 19px;
+    width: 537px;
+    text-align: justify;
+    margin-top: 32px;
+}
+.testimonials-slider__nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 96px;
+    width: 1074px;
+    z-index: 10;
+}
+.testimonials-slider__nav .prev-testimonials {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+.testimonials-slider__nav .next-testimonials {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
