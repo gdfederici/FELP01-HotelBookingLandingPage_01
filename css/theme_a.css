@@ -21,6 +21,9 @@ footer {
 h5 {
      color: #ec1f46;
 }
+h6 {
+    color: #ffffff;
+}
 a {
      text-decoration: none;
      color: #333333;
@@ -32,9 +35,6 @@ a:hover {
 .button-theme_a {
     background: #ec1f46;
     color: #ffffff;
-    font-size: 14px;
-    font-weight: 600;
-    border-radius: 4px;
     border: 1px solid #ec1f46;
 }
 .button-theme_a:hover, .button-theme_a:focus {
@@ -162,6 +162,9 @@ a:hover {
     background: url("../img/ico_check-circle_full.svg") no-repeat left; /* Perchè con list-style-image non c'è allineamento verticale col testo */
     line-height: 18px;
 }
+.package__list_multiline li {
+    background: url("../img/ico_check-circle_full.svg") no-repeat left top;
+}
 .package__date {
     background: url("../img/ico_calendar_black.svg") no-repeat left;
 }
@@ -242,10 +245,6 @@ a:hover {
 .newsletter__form input[type=mail]::placeholder {
     color: #bdbdbd;
 }
-.newsletter__form input[type=submit] {
-    color: #ffffff;
-    background-color: #ec1f46;
-}
 
 
 
@@ -253,7 +252,58 @@ a:hover {
 .other-activities__card p {
     color: #ffffff;
 }
+.other-activities__card_1 {
+    background: linear-gradient(0deg, rgba(10, 34, 61, 1), rgba(196, 196, 196, 0) 65%), url(../img/activity_01.jpg);
+}
+.other-activities__card_2 {
+    background: linear-gradient(0deg, rgba(10, 34, 61, 1), rgba(196, 196, 196, 0) 65%), url(../img/activity_02.jpg);
+}
+.other-activities__card_3 {
+    background: linear-gradient(0deg, rgba(10, 34, 61, 1), rgba(196, 196, 196, 0) 65%), url(../img/activity_03.jpg);
+}
+.other-activities__card_4 {
+    background: linear-gradient(0deg, rgba(10, 34, 61, 1), rgba(196, 196, 196, 0) 65%), url(../img/activity_04.jpg);
+}
 
 
 
 /*** FOOTER ***/
+.footer__widget {
+    color: #bdbdbd;
+}
+.footer__widget a {
+    color: #bdbdbd;
+}
+.footer__widget a:hover {
+    color: #bdbdbd;
+}
+
+/* Prima riga del footer */
+.footer__logo {
+    color: #ffffff;
+}
+.footer__logo span {
+    color: #ec1f46;
+}
+
+/* Seconda riga del footer */
+.footer__contact_address {
+    background: url("../img/ico_map-pin_full.svg") no-repeat left;
+}
+.footer__contact_phone {
+    background: url("../img/ico_phone-call_full.svg") no-repeat left top;
+}
+.footer__contact_mail {
+    background: url("../img/ico_mail_full.svg") no-repeat left;
+}
+.contact-form__required {
+    color: #e0e0e0;
+}
+
+/* Riga di servizio */
+.footer__bottom {
+    background: url("../img/pay-logo.jpg") no-repeat right top;
+}
+.footer__bottom, .footer__bottom a, .footer__bottom a:hover {
+    color: #ffffff;
+}

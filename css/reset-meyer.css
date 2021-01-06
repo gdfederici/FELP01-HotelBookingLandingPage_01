@@ -48,6 +48,7 @@ table {
 }
 
 /* Extra GDFederici */
-input:focus {
-    outline: none;
+input, input:focus, textarea, textarea:focus {
+	outline: none;
+	border: none;
 }
