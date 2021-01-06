@@ -368,8 +368,7 @@ strong {
 }
 .offer-selected__button {
     line-height: 43px;
-    padding: 0 82px;
-    font-weight: 600;
+    padding: 13px 82px;
 }
 
 .offer-map {
@@ -550,6 +549,7 @@ strong {
 }
 .hotecard-double__button {
     padding: 10px 26px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }
 
 /* Card hotel a colonna singola */
@@ -621,13 +621,18 @@ strong {
 }
 .hotelcard-single__button {
     padding: 10px 26px;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
 }
 
 
 
 /*** MAIN CONTENT - TESTIMONIALS ***/
+.page-layout__testimonials {
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
 .testimonials h3 {
-    margin: 40px 0 115px 0;
+    margin: 0px 0 115px 0;
     text-align: center;
 }
 
@@ -695,7 +700,6 @@ strong {
 /*** MAIN CONTENT - NEWSLETTER ***/
 .newsletter {
     height: 260px;
-    margin-top: 70px;
 }
 .newsletter__layout {
     display: flex;
@@ -739,4 +743,47 @@ strong {
 
 
 /*** MAIN CONTENT - OTHER ACTIVITIES ***/
+.page-layout__other-activities {
+    padding-top: 60px;
+    padding-bottom: 98px;
+}
+.other-activities h3 {
+    font-size: 24px;
+    line-height: 30px;
+    margin-bottom: 57px;
+}
+.other-activities__row {
+    display: flex;
+    justify-content: space-between;
+}
+.other-activities__card {
+    position: relative;
+    line-height: 0; /* Eliminare spazio vuoto extra */
+}
+.other-activities__card picture, .other-activities__card img {
+    line-height: 0;
+    border-radius: 6px;
+}
+.other-activities__card div {
+    position: absolute;
+    top: 143px;
+    max-width: 255px;
+    padding: 0 27px;
+}
+.other-activities__card p {
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 700;
+}
+.other-activities__button {
+    display: inline-block;
+    font-family: 'Nunito', Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 6px 21px;
+    margin-top: 18px;
+}
 
+
+
+/*** FOOTER ***/

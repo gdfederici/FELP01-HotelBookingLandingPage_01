@@ -29,7 +29,7 @@ a:hover {
      text-decoration: underline;
      color: #ec1f46;
 }
-button {
+.button-theme_a {
     background: #ec1f46;
     color: #ffffff;
     font-size: 14px;
@@ -37,7 +37,7 @@ button {
     border-radius: 4px;
     border: 1px solid #ec1f46;
 }
-button:hover, button:focus {
+.button-theme_a:hover, .button-theme_a:focus {
     background: #ffffff;
     color: #ec1f46;
 }
@@ -231,9 +231,7 @@ button:hover, button:focus {
 
 /*** MAIN CONTENT - NEWSLETTER ***/
 .newsletter {
-    background: linear-gradient(180deg, rgba(10, 34, 61, 0.8) 20%, rgba(10, 34, 61, 0.8) 80%), url(../img/background-newsletter.jpg);
-/*    background: url("../img/background-newsletter.jpg") rgba(10, 34, 61, 0.80);
-    background-blend-mode: darken;*/
+    background: linear-gradient(rgba(10, 34, 61, 0.9), rgba(10, 34, 61, 0.7)), url(../img/background-newsletter.jpg);
 }
 .newsletter__title {
     color: #ffffff;
@@ -247,3 +245,15 @@ button:hover, button:focus {
 .newsletter__form input[type=submit] {
     color: #ffffff;
     background-color: #ec1f46;
+}
+
+
+
+/*** MAIN CONTENT - OTHER ACTIVITIES ***/
+.other-activities__card p {
+    color: #ffffff;
+}
+
+
+
+/*** FOOTER ***/
