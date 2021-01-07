@@ -896,6 +896,9 @@ strong {
     font-size: 12px;
     padding: 17px 64px 16px 65px;
 }
+.contact-form textarea::placeholder {
+    font-family: 'Mulish', Arial, Helvetica, sans-serif;
+}
 .contact-form__required {
     font-size: 12px;
     font-weight: 700;
