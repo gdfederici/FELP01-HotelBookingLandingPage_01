@@ -19,6 +19,21 @@
     <title>Best Tour Plan | Booking Hotel</title>
     <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+    <link rel="preload" href="/fonts/mulish-v1-latin-ext_latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/mulish-v1-latin-ext_latin-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/mulish-v1-latin-ext_latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/mulish-v1-latin-ext_latin-600.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/mulish-v1-latin-ext_latin-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/mulish-v1-latin-ext_latin-700.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/luckiest-guy-v11-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/luckiest-guy-v11-latin-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/nunito-v16-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/nunito-v16-latin-regular.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/nunito-v16-latin-600.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/nunito-v16-latin-600.woff" as="font" type="font/woff" crossorigin>
+    <link rel="preload" href="/fonts/nunito-v16-latin-ext_latin-800.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/fonts/nunito-v16-latin-ext_latin-800.woff" as="font" type="font/woff" crossorigin> 
 </head>
 
 
@@ -33,7 +48,7 @@
         <div class="header-main page-layout">
             <h1 class="header-main__logo">Best <span>Tour</span> Plan</h1>
             <form class="search-form" action="#" method="get">
-                <input type="text" name="search" placeholder="Search Location" required="required" />
+                <label for="search"></label><input type="text" name="search" placeholder="Search Location" required="required" />
                 <input type="submit" name="submit" value="" />
             </form>
             <div class="header-main__cart">
@@ -103,8 +118,8 @@
                         <img src="img/grand-hilton-hotel.jpg" loading="lazy" alt="Gran Hilton Hotel swimming pool">
                     </picture>
                     <div class="hotel-photoslider__nav">
-                        <a href="#" class="prev-slider"></a>
-                        <a href="#" class="next-slider"></a>
+                        <a href="#" class="prev-slider" aria-label="Previous Photo"></a>
+                        <a href="#" class="next-slider" aria-label="Next Photo"></a>
                     </div>    
                 </div>
                 <div class="offer-highlights__column"> <!-- Per posizionamento -->
@@ -420,8 +435,8 @@
                 </div> <!-- testimonials-slider__single - Blocco singola testimonianza -->
                 
                 <div class="testimonials-slider__nav">
-                    <a href="#" class="prev-testimonials"></a>
-                    <a href="#" class="next-testimonials"></a>
+                    <a href="#" class="prev-testimonials" aria-label="Previous Testimonial"></a>
+                    <a href="#" class="next-testimonials" aria-label="Next-Testimonial"></a>
                 </div>
             </div>
 
