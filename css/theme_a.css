@@ -296,6 +296,9 @@ a:hover {
 .footer__contact_mail {
     background: url("../img/ico_mail_full.svg") no-repeat left;
 }
+.contact-form__input::placeholder, .contact-form textarea::placeholder {
+    color: #bdbdbd;
+}
 .contact-form__required {
     color: #e0e0e0;
 }
