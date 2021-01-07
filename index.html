@@ -48,7 +48,7 @@
         <div class="header-main page-layout">
             <h1 class="header-main__logo">Best <span>Tour</span> Plan</h1>
             <form class="search-form" action="#" method="get">
-                <label for="search"></label><input type="text" name="search" placeholder="Search Location" required="required" />
+                <label for="search" class="onlyscreenreader">Search location</label><input type="text" name="search" placeholder="Search Location" required="required" />
                 <input type="submit" name="submit" value="" />
             </form>
             <div class="header-main__cart">
@@ -449,7 +449,7 @@
                     <h3>Newsletter</h3>
                 </div>
                 <form class="newsletter__form" action="#" method="post">
-                    <input type="mail" name="mail" placeholder="Your email address" required="required" />
+                    <label for="mail" class="onlyscreenreader">Your mail address</label><input type="mail" name="mail" placeholder="Your email address" required="required" />
                     <input type="submit" name="submit" value="Send" class="button-theme_a" />
                 </form>
             </div>
@@ -547,9 +547,9 @@
             <div class="footer__widget_double footer__widget_last">
                 <h6>Send us a messagge</h6>
                 <form class="contact-form" action="#" method="post">
-                    <input type="text" name="name" placeholder="Your Full Name*" required="required" class="contact-form__input" />
-                    <input type="tel" name="phone" placeholder="Phone Number*" required="required" class="contact-form__input" />
-                    <textarea name="messagge" placeholder="Message" rows="4"></textarea>
+                    <label for="name" class="onlyscreenreader">Your full name</label><input type="text" name="name" placeholder="Your Full Name*" required="required" class="contact-form__input" />
+                    <label for="phone" class="onlyscreenreader">Phone number</label><input type="tel" name="phone" placeholder="Phone Number*" required="required" class="contact-form__input" />
+                    <label for="message" class="onlyscreenreader">Message</label><textarea name="messagge" placeholder="Message" rows="4"></textarea>
                     <input type="submit" name="submit" value="Send" class="button-theme_a" />
                 </form>
                 <p class="contact-form__required">* Required fields</p>

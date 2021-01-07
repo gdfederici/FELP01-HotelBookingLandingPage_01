@@ -131,6 +131,18 @@ strong {
 
 
 
+/*** SCREEN READER ***/
+.onlyscreenreader {
+    clip: rect(0 0 0 0);
+    height: 1px;
+    width: 1px;
+    margin: -1px;
+    overflow: hidden;
+    position: absolute;
+}
+
+
+
 /*** BOXED STYLE ***/
 .page-layout {
     padding-left: 165px;
