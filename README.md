@@ -1,4 +1,4 @@
-# WFE_LP01- Hotel Booking Landing Page
+# Hotel Booking Landing Page
 IT_ Landing page per prenotazione albergo<br/>
 EN_ Hotel booking landing page<br/>
 
