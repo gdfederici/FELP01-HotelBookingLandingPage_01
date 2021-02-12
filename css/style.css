@@ -752,7 +752,7 @@ strong {
     justify-items: flex-start;
     align-items: flex-start;
 }
-.newsletter__form input[type=mail] {
+.newsletter__form input[type=email] {
     border-radius: 4px 0 0 4px;
     border: none;
     width: 285px;
