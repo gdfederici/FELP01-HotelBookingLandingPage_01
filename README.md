@@ -11,4 +11,4 @@ IT_ HTML, CSS (flexbox e metogologia BEM), Figma, Trello, GitHub.<br/>
 EN_ HTML, CSS (flexbox and BEM methodology), Figma, Trello, GitHub.<br/>
 
 ## Link:
-https://wfelp01-hotelbookinglandingpage01.netlify.app/<br/> 
+https://felp01-hotelbookinglandingpage01.netlify.app/<br/> 
